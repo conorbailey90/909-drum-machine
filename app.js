@@ -49,13 +49,13 @@ function playPad(key) {
 
   samples[key].el.addEventListener("animationend", removeAnimation);
 }
+
 function removeAnimation(e) {
   e.currentTarget.style.animation = "none";
 }
 
 window.addEventListener("keydown", function(e) {
   playPad(e.key.toUpperCase());
-  console.log(e.key);
 });
 
 construct();

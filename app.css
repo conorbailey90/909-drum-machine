@@ -2,32 +2,66 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Didact Gothic", sans-serif;
 }
+
+span {
+  display: inline-block;
+  font-size: 0.7rem;
+}
+
 .container {
-  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 .machine {
-  height: 100vh;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 40vh;
   display: flex;
+  width: 60vh;
   align-items: center;
   justify-content: center;
-
   border: 1px solid #2d2d2d;
 }
 
+h1 {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  margin: 0.5rem;
+}
+
+h5 {
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
+  margin: 0.5rem;
+  margin-top: 0.8rem;
+}
+
 .pad {
-  padding: 10px 30px;
+  width: 80px;
+  height: 100px;
+  padding: 20px 10px;
   margin: 10px;
   text-align: center;
   border: 1px solid #000;
   cursor: pointer;
+  box-shadow: 1px 2px rgb(39, 39, 39);
 }
 
 @keyframes pad-animation {
   from {
-    background: #000;
+    background: #fff;
   }
   to {
-    background: red;
+    background: #f2f2f2;
+    box-shadow: 0px 0px #000;
   }
 }
