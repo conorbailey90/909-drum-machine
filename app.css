@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  align-items: center;
+}
+.machine {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #2d2d2d;
+}
+
+.pad {
+  padding: 10px 30px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+@keyframes pad-animation {
+  from {
+    background: #000;
+  }
+  to {
+    background: red;
+  }
+}
